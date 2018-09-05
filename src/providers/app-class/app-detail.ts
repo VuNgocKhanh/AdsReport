@@ -20,14 +20,14 @@ export class AppDetail {
     }
 
     parseData(data){
-        if(data.id) this.setAppID(data.id);
-        if(data.name) this.setName(data.name);
-        if(data.des) this.setDescription(data.des);
-        if(data.link) this.setLink(data.link);
-        if(data.time) this.setTime(data.time);
-        if(data.running_campaign) this.setRunningCampaign(data.running_campaign);
-        if(data.total_campaign) this.setTotalCampaign(data.total_campaign);
-        if(data.status) this.setStatus(data.status);
+        if("id" in data) this.setAppID(data.id);
+        if("name" in data) this.setName(data.name);
+        if("des" in data) this.setDescription(data.des);
+        if("link" in data) this.setLink(data.link);
+        if("time" in data) this.setTime(data.time);
+        if("running_campaign" in data) this.setRunningCampaign(data.running_campaign);
+        if("total_campaign" in data) this.setTotalCampaign(data.total_campaign);
+        if("status" in data) this.setStatus(data.status);
     }
 
     public getAppID() : number {
