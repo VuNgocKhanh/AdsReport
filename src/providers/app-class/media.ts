@@ -21,13 +21,13 @@ class Media {
     }
 
     parseData(data){
-        if(data.id) this.setMediaID(data.id);
-        if(data.content_type) this.setContentType(data.content_type);
-        if(data.storage_type) this.setStorageType(data.storage_type);
-        if(data.url) this.setUrl(data.url);
-        if(data.link) this.setLink(data.link);
-        if(data.element_type) this.setElementType(data.element_type);
-        if(data.status) this.setStatus(data.status);
+        if("id" in data) this.setMediaID(data.id);
+        if("content_type" in data) this.setContentType(data.content_type);
+        if("storage_type" in data) this.setStorageType(data.storage_type);
+        if("url" in data) this.setUrl(data.url);
+        if("link" in data) this.setLink(data.link);
+        if("element_type" in data) this.setElementType(data.element_type);
+        if("status" in data) this.setStatus(data.status);
     }
 
     public getMediaID() : number {

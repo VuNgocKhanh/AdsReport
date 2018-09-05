@@ -15,10 +15,10 @@ class Click {
     }
 
     parseData(data){
-        if(data.click) this.setClick(data.click);
-        if(data.time) this.setTime(data.time);
-        if(data.count) this.setCount(data.count);
-        if(data.status) this.setStatus(data.status);
+        if("click" in data) this.setClick(data.click);
+        if("time" in data) this.setTime(data.time);
+        if("count" in data) this.setCount(data.count);
+        if("status" in data) this.setStatus(data.status);
     }
 
     public getClick() : number {
