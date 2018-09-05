@@ -28,17 +28,17 @@ class Unit {
     }
 
     parseData(data){
-        if(data.id) this.setId(data.id);
-        if(data.title) this.setTitle(data.title);
-        if(data.banner_type) this.setBannerType(data.banner_type);
-        if(data.status) this.setStatus(data.status);
-        if(data.platform) this.setPlatform(data.platform);
-        if(data.location) this.setLocation(data.location);
-        if(data.adv_name) this.setAdvName(data.adv_name);
-        if(data.adv_protext_1) this.setAdvProtext1(data.adv_protext_1);
-        if(data.adv_protext_2) this.setAdvProtext2(data.adv_protext_2);
-        if(data.url) this.setUrl(data.url);
-        if(data.time_start) this.setTimeStart(data.time_start);
+        if("id" in data) this.setId(data.id);
+        if("title" in data) this.setTitle(data.title);
+        if("banner_type" in data) this.setBannerType(data.banner_type);
+        if("status" in data) this.setStatus(data.status);
+        if("platform" in data) this.setPlatform(data.platform);
+        if("location" in data) this.setLocation(data.location);
+        if("adv_name" in data) this.setAdvName(data.adv_name);
+        if("adv_protext_1" in data) this.setAdvProtext1(data.adv_protext_1);
+        if("adv_protext_2" in data) this.setAdvProtext2(data.adv_protext_2);
+        if("url" in data) this.setUrl(data.url);
+        if("time_start" in data) this.setTimeStart(data.time_start);
     }
 
     public getId() : number {

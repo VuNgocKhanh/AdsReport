@@ -23,14 +23,14 @@ export class User{
         }
     }
     parseData(data){
-        if(data.id) this.userID = data.id;
-        if(data.user_name) this.userName = data.user_name;
-        if(data.full_name) this.fullName = data.full_name;
-        if(data.email) this.email = data.email;
-        if(data.phone) this.phone = data.phone;
-        if(data.company) this.company = data.company;
-        if(data.role) this.role = data.role;
-        if(data.status) this.status = data.status;
+        if("id" in data) this.setUserID(data.id);
+        if("user_name" in data) this.setUserName(data.user_name);
+        if("full_name" in data) this.setFullName(data.full_name);
+        if("email" in data) this.setEmail(data.email);
+        if("phone" in data) this.setPhone(data.phone);
+        if("company" in data) this.setCompany(data.company);
+        if("role" in data) this.setRole(data.role);
+        if("status" in data) this.setStatus(data.status);
     }
 
     public getUserID() : number {

@@ -41,23 +41,23 @@ class Campaign {
     }
 
     parseData(data){
-        if(data.id) this.setCampaignID(data.id);
-        if(data.app_id) this.setAppId(data.app_id);
-        if(data.name) this.setName(data.name);
-        if(data.impressions) this.setImpressions(data.impressions);
-        if(data.clicks) this.setClicks(data.clicks);
-        if(data.priority) this.setPriority(data.priority);
-        if(data.weight) this.setWeight(data.weight);
-        if(data.target_impression) this.setTargetImpressions(data.target_impression);
-        if(data.target_click) this.setTargetClicks(data.target_click);
-        if(data.updated_time) this.setUpdateTime(data.updated_time);
-        if(data.block) this.setBlock(data.block);
-        if(data.comments) this.setComments(data.comments);
-        if(data.status) this.setStatus(data.status);
-        if(data.activate_time) this.setActiveTime(data.activate_time);
-        if(data.expireTime) this.setExpireTime(data.expireTime);
-        if(data.location) this.setLocation(data.location);
-        if(data.type) this.setType(data.type);
+        if("id" in data) this.setCampaignID(data.id);
+        if("app_id" in data) this.setAppId(data.app_id);
+        if("name" in data) this.setName(data.name);
+        if("impressions" in data) this.setImpressions(data.impressions);
+        if("clicks" in data) this.setClicks(data.clicks);
+        if("priority" in data) this.setPriority(data.priority);
+        if("weight" in data) this.setWeight(data.weight);
+        if("target_impression" in data) this.setTargetImpressions(data.target_impression);
+        if("target_click" in data) this.setTargetClicks(data.target_click);
+        if("updated_time" in data) this.setUpdateTime(data.updated_time);
+        if("block" in data) this.setBlock(data.block);
+        if("comments" in data) this.setComments(data.comments);
+        if("status" in data) this.setStatus(data.status);
+        if("activate_time" in data) this.setActiveTime(data.activate_time);
+        if("expireTime" in data) this.setExpireTime(data.expireTime);
+        if("location" in data) this.setLocation(data.location);
+        if("type" in data) this.setType(data.type);
     }
 
     public getCampaignID() : number {

@@ -15,10 +15,10 @@ class Impression {
     }
 
     parseData(data){
-        if(data.impression) this.setImpression(data.impression);
-        if(data.time) this.setTime(data.time);
-        if(data.count) this.setCount(data.count);
-        if(data.status) this.setStatus(data.status);
+        if("impression" in data) this.setImpression(data.impression);
+        if("time" in data) this.setTime(data.time);
+        if("count" in data) this.setCount(data.count);
+        if("status" in data) this.setStatus(data.status);
     }
 
     public getImpression() : number {
