@@ -19,7 +19,6 @@ export class ChangePasswordPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ChangePasswordPage');
   }
 
 }

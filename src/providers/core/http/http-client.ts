@@ -39,7 +39,7 @@ export class HttpClient extends Config {
             this.mAngularHeader = new Headers();
             this.mAngularHeader.append('Content-Type', 'application/x-www-form-urlencoded;charset=utf-8');
         }
-        return this.mAngularHeader
+        return this.mAngularHeader;
     }
 
     public setDebugEnable(enable: boolean) {

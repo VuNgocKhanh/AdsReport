@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "name": "Wiads Ads",
+  "config": {
+    "get_config": false,
+    "ios": "",
+    "android": ""
+  },
+  "device": {
+    "uuid_default": "",
+    "name_default": "Web"
+  },
+  "onesignal": {
+    "enable": true,
+    "app_id": "bfec5fc3-b0c0-4d32-a80d-f32c2331690d",
+    "project_number": "893836876426",
+    "default_onesignal_id": "22d2f455-7a9c-4fb1-9b0f-s382sja22"
+  },
+  "http": {
+    "debug": false,
+    "client_id": "",
+    "client_secret": "",
+    "client_key": "8c24516c23b611420defccf253598412",
+    "api_server": "api_primary",
+    "api_primary": {
+      "host": "http://adv2.wiads.net:8080/ws"
+    },
+    "api_test": {
+      "host": ""
+    }
+  },
+  "rootPage":{
+    "ROLE_ADMINISTRATOR": "AdminDashboardPage",
+    "ROLE_OPERATOR": "AdminDashboardPage",
+    "ROLE_ADVERTISER" : "AdvertiserDashboardPage"
+  }
+}
